@@ -1,0 +1,203 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightcoral;
+}
+
+.main-container {
+  min-width: 40vw;
+  min-height: 20vh;
+  max-width: 60vw;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #ffe6d4a9;
+  border: 5px solid #e54e51;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in-out;
+  border-radius: 15px;
+}
+
+#header {
+  width: 100%;
+  max-width: 500px;
+  min-height: 60px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: #ba3d46;
+}
+
+#jokeSetup {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.25rem;
+}
+
+.jokeDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.showJoke {
+  opacity: 1;
+}
+
+#jokePunchline {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.Btn {
+  padding-top: 10px;
+}
+
+#jokeBtn {
+  min-width: 150px;
+  height: 45px;
+  padding: 10px;
+  outline: transparent;
+  border-radius: 8px;
+  border: 2px solid;
+  cursor: pointer;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.2rem;
+  background-color: #db6e846e;
+}
+
+#jokeBtn:hover {
+  background-color: rgb(219, 110, 111);
+  color: #fff;
+}
+
+.expanded {
+  height: 30vh;
+  width: 50px;
+}
+
+@media screen and (max-width: 1000px) and (max-height: 730px) {
+  .main-container {
+    min-width: 30rem;
+    max-width: 45rem;
+    min-height: 25vh;
+    max-height: 60vh;
+    padding: 8px;
+  }
+
+  #header {
+    min-width: 10rem;
+    max-width: 20rem;
+    min-height: 3rem;
+    max-height: 8rem;
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .jokeDiv {
+    min-width: 22rem;
+    max-width: 40rem;
+    max-height: 10rem;
+    min-height: 5rem;
+  }
+
+  .Btn {
+    padding-bottom: 10px;
+  }
+  #jokeBtn {
+    min-width: 7rem;
+    max-width: 12rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .main-container {
+    min-width: 28rem;
+    max-width: 40rem;
+    min-height: 33vh;
+    max-height: 60vh;
+    padding: 10px;
+  }
+
+  .jokeDiv {
+    min-width: 18rem;
+    max-width: 20rem;
+    min-height: 11vh;
+    max-height: 15vh;
+  }
+
+  #header {
+    text-align: center;
+    font-size: 12px;
+    min-width: 15rem;
+    max-width: 18rem;
+    min-height: 3rem;
+    max-height: 8rem;
+  }
+
+  #jokeBtn {
+    min-width: 8rem;
+    max-width: 10rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main-container {
+    min-width: 25rem;
+    max-width: 50rem;
+    min-height: 25vh;
+    max-height: 40vh;
+    padding: 15px;
+  }
+
+  #header {
+    text-align: center;
+    min-width: 9rem;
+    max-width: 16rem;
+    min-height: 3rem;
+    max-height: 8rem;
+    font-size: 11px;
+  }
+
+  .jokeDiv {
+    min-width: 10rem;
+    max-width: 15rem;
+    min-height: 8vh;
+    max-height: 15vh;
+  }
+
+  #jokeSetup {
+    font-size: 1.1rem;
+  }
+
+  #jokePunchline {
+    font-size: 1.1rem;
+  }
+
+  #jokeBtn {
+    min-width: 6rem;
+    max-width: 12rem;
+    min-height: 10px;
+    max-height: 40px;
+    font-size: 1rem;
+  }
+}
